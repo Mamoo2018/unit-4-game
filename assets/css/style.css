@@ -1,0 +1,173 @@
+/*---------------------*/
+/* Body and background */
+/*---------------------*/
+
+
+body {
+  background-image: url("../images/Harry-Potter-RPG--background.jpg");
+  background-size: cover;
+  font-family: 'Harry P';
+  }
+  header {
+	font-size: 50px;
+	text-align: center;
+  padding: 20px;
+ 
+  }
+  header img {
+    width: 50%;
+    height: auto;
+  }
+  .characterWrapper {
+	width: 75%;
+	margin-right: auto;
+	margin-left: auto;
+  }
+  #choose-enemy-button {
+	visibility: hidden;
+  }
+  #restart-button {
+	visibility: hidden;
+  }
+  #turn-counter {
+	font-size: 150%;
+  }
+  #gameMessage {
+    font-size: 25px;
+    color: #fed405;
+    text-align: center;
+    background-color: #000;
+  }
+  #selected-character {
+    color: red;
+    font-size: 30px;
+    
+}
+  /*---------------------*/
+  /* Character rendering */
+  /*---------------------*/
+  .character {
+	width: 153px;
+	margin: 0px 40px 0px 40px;
+	cursor: pointer;
+	display: inline-block;
+  }
+  .character img {
+	border: 0 none;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 200px;
+  }
+  .character-name {
+	text-align: center;
+	text-transform: capitalize;
+	line-height: 30px;
+	/*font-family: 'Itim', cursive;*/
+  font-size: 30px;
+  color: #fed405;
+  }
+  .character-health {
+    text-align: center;
+    color: #fed405;
+    font-size: 20px;
+    }
+    
+  .section-title.container.col-lg-4{
+    color: #fed405;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  
+  /*---------------------*/
+  /*      Fighting       */
+  /*---------------------*/
+  .attack {
+	text-align: center;
+  }
+  .action {
+	margin: 15px 0px;
+  }
+  #attack-button{
+	  visibility: hidden;
+  }
+  .btn {
+	  background: #000;
+	  color: #DBD2C6;	
+  }
+  .enemy {
+	  width: 153px;
+	  margin: 5px;
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+	cursor: pointer;
+	display: inline-block;
+	background-color:#60b7c8;
+	/*float: left;*/
+  }
+  #attacker {
+	  padding: 5px;
+  }
+  .target-enemy {
+		color: #fed405;
+  }
+  .character-section .container.section-title.col-lg-3 {
+    font-size:30px;
+    color: red;
+
+  }
+  #attack-button {
+
+    color: #fed405;
+    font-size: 18px;
+    border: 3px solid white;
+
+}
+  
+  /*---------------------*/
+  /* Available Oponents  */
+  /*---------------------*/
+  #available-to-attack-section {
+  float: right;
+  color: #fed405;
+  font-size: 35px;
+  font-weight: bold;
+  }
+  #available-to-attack-section img {
+	  height: 100px;
+  }
+  
+  /*---------------------*/
+  /*      Defender       */
+  /*---------------------*/
+  
+  /*#defender {
+	width: 190px;
+	height: 160px;
+  }*/
+  #defender-name {
+	text-align: center;
+  }
+  #defender-image {
+	padding: 0px 16px;
+	margin: 3px 0px;
+  }
+  #defender-health {
+	text-align: center;
+  }
+  
+  /*---------------------*/
+  /*   Media Queries     */
+  /*---------------------*/
+  @media only screen and (max-device-width: 768px) {
+	.character {
+	  display: block;
+	height: 150px;    
+	}
+	#gameMessage {
+	font-size: 12px;
+	}
+  }
+  
